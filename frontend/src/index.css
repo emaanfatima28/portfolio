@@ -1,0 +1,55 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Ghibli pastel palette */
+  --bg: #fdf6ee;
+  --bg2: #f3ede3;
+  --surface: #fffaf4;
+  --text: #3d2c1e;
+  --text-muted: #8a7060;
+  --sage: #7daa8b;
+  --sage-light: #d4ead9;
+  --rose: #e8a4a4;
+  --rose-light: #fce8e8;
+  --sky: #a8c8e8;
+  --sky-light: #ddf0ff;
+  --peach: #f5c49a;
+  --peach-light: #fdecd8;
+  --lavender: #c8aadc;
+  --lavender-light: #ede4f5;
+  --butter: #f5e4a0;
+  --butter-light: #fdf6d8;
+
+  --border: #e8d8c8;
+  --radius-sm: 12px;
+  --radius: 20px;
+  --radius-lg: 32px;
+  --font-display: 'Gochi Hand', cursive;
+  --font-body: 'Nunito', sans-serif;
+  --transition: 0.25s ease;
+}
+
+html { scroll-behavior: smooth; font-size: 16px; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-weight: 400;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: inherit; text-decoration: none; }
+button { cursor: pointer; border: none; background: none; font-family: var(--font-body); }
+img { display: block; max-width: 100%; }
+
+::selection { background: var(--sage); color: white; }
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg2); }
+::-webkit-scrollbar-thumb { background: var(--sage); border-radius: 99px; }

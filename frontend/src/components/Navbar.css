@@ -1,0 +1,57 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 3rem;
+  background: rgba(253, 246, 238, 0.88);
+  backdrop-filter: blur(14px);
+  border-bottom: 2px dashed var(--border);
+}
+
+.navbar__logo {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.navbar__logo-leaf {
+  font-size: 1.2rem;
+}
+
+.navbar__links {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.navbar__links a {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  padding: 0.4rem 1rem;
+  border-radius: 99px;
+  transition: all var(--transition);
+  border: 2px solid transparent;
+}
+
+.navbar__links a:hover {
+  background: var(--sage-light);
+  color: var(--sage);
+  border-color: var(--sage);
+}
+
+.navbar__links a.active {
+  background: var(--sage);
+  color: white;
+  border-color: var(--sage);
+}
+
+@media (max-width: 640px) {
+  .navbar { padding: 0.9rem 1.25rem; }
+  .navbar__links a { padding: 0.35rem 0.65rem; font-size: 0.8rem; }
+}
