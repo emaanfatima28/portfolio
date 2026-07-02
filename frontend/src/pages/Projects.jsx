@@ -221,10 +221,9 @@ function ProjectCard({ project, index }) {
       <div className="project-card__body">
         <div className="project-card__top">
           <span className="project-card__emoji">{project.emoji}</span>
+          <h2 className="project-card__title">{project.title}</h2>
           <span className="project-card__num">0{index + 1}</span>
         </div>
-        <h2 className="project-card__title">{project.title}</h2>
-        <p className="project-card__subtitle">{project.subtitle}</p>
         <p className="project-card__desc">{project.description}</p>
         <div className="project-card__tags">
           {project.tags.map((tag) => (
@@ -266,7 +265,7 @@ export default function Projects() {
         <div className="projects-header__tag">✨ Work</div>
         <h1 className="projects-header__title">Things I've Built</h1>
         <p className="projects-header__sub">
-          From peer-to-peer platforms to AI-powered apps — here's what I've been making.
+          Here are some of the projects that i worked on! 💭
         </p>
       </div>
 
